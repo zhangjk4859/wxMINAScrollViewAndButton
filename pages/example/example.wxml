@@ -1,9 +1,9 @@
 <view class="container">
    <!--顶部按钮标题栏-->
-   <view class="titleView">
+   <view class="titleView" style="height: {{titleHeight}}rpx;background: {{titleColor}};">
        <!--循环创建四个按钮-->
        <block wx:for-items="{{titles}}" wx:for-item="title">
-           <view class="title-item" id="{{index}}" bindtap="titleClick">{{title.name}}</view> 
+           <view class="title-item" id="{{index}}" bindtap="titleClick" style="width:{{divideWidth}}%;line-height: {{titleHeight}}rpx;">{{title.name}}</view> 
        </block>
    </view>
 
@@ -25,7 +25,7 @@
    </view>
 
 
-<!--<button bindtap="defaulti">测试按钮</button>-->
+
 
 
 

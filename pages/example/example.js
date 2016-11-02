@@ -1,30 +1,37 @@
+
+var indicatorColor = 'orange' //指示条颜色
+var bgColor = 'white'         //指示条背景颜色
+
+
 Page({
   data:{
+    titleColor : 'rgb(100,170,50)', //标题按钮背景颜色
+    titleHeight:100,//单位为rpx       //标题高度
     titles:[
                 {
                   name:'标题一',
                   selected:false,
-                  color:'orange'
+                  color:indicatorColor
                 },
                 {
                   name:'标题二',
                   selected:true,
-                  color:'white'    
+                  color:bgColor    
                 },
                 {
                   name:'标题三',
                   selected:true,
-                  color:'white'
+                  color:bgColor
                 },
                 {
                   name:'标题四',
                   selected:true,
-                  color:'white'
+                  color:bgColor
                 },
                 {
                   name:'标题五',
                   selected:true,
-                  color:'white'
+                  color:bgColor
                 }
             ],
     titleScrollLeft : 0,
@@ -78,23 +85,12 @@ Page({
     var titles = this.data.titles;
     
     for (var i=0;i<titles.length;i++){
-      titles[i].color = 'white';
+      titles[i].color = bgColor;
     }
-    titles[index].color = 'orange';
+    titles[index].color = indicatorColor;
        this.setData({
       titles : titles
     })
-  },
-
-  // defaulti:function(index){
-  //   var titles = this.data.titles;
-  //   titles[2].selected = false;
-  
-
-  //  this.setData({
-  //     titles : titles
-  //   })
-
-  //   }
+  }
 
 })
