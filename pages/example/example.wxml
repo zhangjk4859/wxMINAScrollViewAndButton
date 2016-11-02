@@ -6,28 +6,16 @@
            <view class="title-item" id="{{index}}" bindtap="titleClick" style="width:{{divideWidth}}%;line-height: {{titleHeight}}rpx;">{{title.name}}</view> 
        </block>
    </view>
-
    <!--指示横条-->
-   <view class="indicator">
-       
+   <view class="indicator" style=" height: {{indicatorHeight}}rpx;"> 
        <block wx:for-items="{{titles}}" wx:for-item="title">
-       <!--hidden="{{title.selected}}"-->
            <view class="indicator-item" style="width:{{divideWidth}}%;background-color: {{title.color}};" ></view> 
        </block>
-
    <view>
-
-
    <!--底部滚动视图-->
    <view class="scrollView-section">
    
    
    </view>
-
-
-
-
-
-
 </view>
 
