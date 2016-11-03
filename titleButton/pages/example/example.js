@@ -10,8 +10,8 @@ Page({
     bgColor : 'white',              //指示条背景颜色
     indicatorHeight:10,             //指示器高度，单位为rpx
     
-    fontSizeL:15,                   //按钮字体，单位px,默认15
-    fontSizeS:13,                   //按钮字体，单位px,标题数大于5自动缩小为13
+    fontSizeL:15,                   //正常按钮字体，单位px,默认15
+    fontSizeS:13,                   //缩小后按钮字体，单位px,标题数大于5自动缩小为13
     thresholdCount : 5,             //字体变化的数组数量临界点，默认为5组
 
     //在这个数组中按照格式增加和减少标题的数量               
