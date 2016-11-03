@@ -12,7 +12,7 @@ Page({
     
     fontSizeL:15,                   //按钮字体，单位px,默认15
     fontSizeS:13,                   //按钮字体，单位px,标题数大于5自动缩小为13
-    thresholdCount : 5,             //字体变化的数组数量临界点，默认为5组
+    thresholdCount : 6,             //字体变化的数组数量临界点，默认为5组
 
     //在这个数组中按照格式增加和减少标题的数量               
     titles:[
@@ -30,6 +30,12 @@ Page({
                 },
                 {
                   name:'标题五'
+                },
+                {
+                  name:'标题六'
+                },
+                {
+                  name:'标题七'
                 }
             ]
   },
@@ -42,7 +48,7 @@ Page({
       this.defaultIndicator(0);
       //大于一定数量标题，字体设置为13号（默认）进行自适应
       var count = this.data.titles.length;
-      var thresholdCount = this.data.titles.thresholdCount;
+      var thresholdCount = this.data.thresholdCount;
       if(count > thresholdCount){
         this.setData({
           fontSize : this.data.fontSizeS
